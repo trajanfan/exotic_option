@@ -3,6 +3,7 @@
 @author: Trajan
 """
 
+# Use the local volatility to make it faster.
 import numpy as np
 
 from classbuild import Contract
