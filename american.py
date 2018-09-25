@@ -3,7 +3,7 @@
 @author: Trajan
 """
 
-# reference:https://canvas.uchicago.edu/courses/14057/files/1305305?module_item_id=581775
+# reference: https://canvas.uchicago.edu/courses/14057/files/1305305?module_item_id=581775
 import numpy as np
 
 from classbuild import Contract
