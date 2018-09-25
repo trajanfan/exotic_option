@@ -3,6 +3,7 @@
 @author: Trajan
 """
 
+# One of parameters high and low must be None and the other one must be a number.
 import numpy as np
 
 from classbuild import Contract
