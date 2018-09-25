@@ -3,7 +3,6 @@
 @author: Trajan
 """
 import numpy as np
-import sys
 
 from classbuild import Contract
 from classbuild import Dynamics
@@ -31,9 +30,6 @@ def put_option_pricer(dynamics, contract, tree):
     deltax = sigma*np.sqrt(3*deltat) 
     
     S=S0*np.exp(np.linspace(N, -N, num=2*N+1, endpoint=True)*deltax)
-
-    if abs(interval/deltat-round(interval/deltat)) > 1e-12:
-        sys.exit("This value of N fails to place the observation dates in the tree.")
 
     nu =  r - sigma*sigma/2
     Pu =  1/2*((sigma*sigma*deltat+nu*nu*deltat*deltat)/(deltax*deltax) + nu*deltat/deltax)    
