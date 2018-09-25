@@ -13,9 +13,6 @@ class Tree:
     def __init__(self, N=100):
         self.N = N
 
-class TD:
-    pass
-
 class MC:
     def __init__(self, N=10000, T=10, seed=0):
         self.N = N
